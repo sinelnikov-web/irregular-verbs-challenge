@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/irregular-verbs-challenge/static/css/main.14c09f3b.chunk.css",
-    "main.js": "/irregular-verbs-challenge/static/js/main.8639355c.chunk.js",
-    "main.js.map": "/irregular-verbs-challenge/static/js/main.8639355c.chunk.js.map",
-    "runtime-main.js": "/irregular-verbs-challenge/static/js/runtime-main.4efb96a2.js",
-    "runtime-main.js.map": "/irregular-verbs-challenge/static/js/runtime-main.4efb96a2.js.map",
-    "static/js/2.805937a0.chunk.js": "/irregular-verbs-challenge/static/js/2.805937a0.chunk.js",
-    "static/js/2.805937a0.chunk.js.map": "/irregular-verbs-challenge/static/js/2.805937a0.chunk.js.map",
-    "static/js/3.11169ec0.chunk.js": "/irregular-verbs-challenge/static/js/3.11169ec0.chunk.js",
-    "static/js/3.11169ec0.chunk.js.map": "/irregular-verbs-challenge/static/js/3.11169ec0.chunk.js.map",
+    "main.css": "/irregular-verbs-challenge/static/css/main.42c922a8.chunk.css",
+    "main.js": "/irregular-verbs-challenge/static/js/main.a005e666.chunk.js",
+    "main.js.map": "/irregular-verbs-challenge/static/js/main.a005e666.chunk.js.map",
+    "runtime-main.js": "/irregular-verbs-challenge/static/js/runtime-main.7dec97b8.js",
+    "runtime-main.js.map": "/irregular-verbs-challenge/static/js/runtime-main.7dec97b8.js.map",
+    "static/js/2.2878b838.chunk.js": "/irregular-verbs-challenge/static/js/2.2878b838.chunk.js",
+    "static/js/2.2878b838.chunk.js.map": "/irregular-verbs-challenge/static/js/2.2878b838.chunk.js.map",
+    "static/js/3.5b0102b3.chunk.js": "/irregular-verbs-challenge/static/js/3.5b0102b3.chunk.js",
+    "static/js/3.5b0102b3.chunk.js.map": "/irregular-verbs-challenge/static/js/3.5b0102b3.chunk.js.map",
     "index.html": "/irregular-verbs-challenge/index.html",
-    "static/css/main.14c09f3b.chunk.css.map": "/irregular-verbs-challenge/static/css/main.14c09f3b.chunk.css.map",
-    "static/js/2.805937a0.chunk.js.LICENSE.txt": "/irregular-verbs-challenge/static/js/2.805937a0.chunk.js.LICENSE.txt",
+    "static/css/main.42c922a8.chunk.css.map": "/irregular-verbs-challenge/static/css/main.42c922a8.chunk.css.map",
+    "static/js/2.2878b838.chunk.js.LICENSE.txt": "/irregular-verbs-challenge/static/js/2.2878b838.chunk.js.LICENSE.txt",
     "static/media/heart.b0e72901.png": "/irregular-verbs-challenge/static/media/heart.b0e72901.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4efb96a2.js",
-    "static/js/2.805937a0.chunk.js",
-    "static/css/main.14c09f3b.chunk.css",
-    "static/js/main.8639355c.chunk.js"
+    "static/js/runtime-main.7dec97b8.js",
+    "static/js/2.2878b838.chunk.js",
+    "static/css/main.42c922a8.chunk.css",
+    "static/js/main.a005e666.chunk.js"
   ]
 }
