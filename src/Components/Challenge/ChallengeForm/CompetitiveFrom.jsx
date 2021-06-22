@@ -1,8 +1,7 @@
 import {Button, TextField} from "@material-ui/core";
 import {useFormik} from "formik";
 import React from "react";
-import {Redirect} from "react-router-dom"
-import EndPage from "../../EndPage/EndPage";
+import {Link} from "react-router-dom";
 
 const CompetitiveFrom = ({onSubmit, setStatus, isSubmit, errors, generateVerb, setErrors, setIsSubmit, life, isTyping}) => {
 
@@ -28,7 +27,7 @@ const CompetitiveFrom = ({onSubmit, setStatus, isSubmit, errors, generateVerb, s
     }
 
     return(
-        <form onSubmit={formik.handleSubmit}>
+        <form onSubmit={formik.handleSubmit} autoComplete={'off'}>
             <div className="challenge__input-group">
                 <TextField
                     InputProps={{
@@ -82,9 +81,16 @@ const CompetitiveFrom = ({onSubmit, setStatus, isSubmit, errors, generateVerb, s
                         type="submit">
                     Submit
                 </Button>
-                <Button onClick={handleSwitchStep} disabled={!isSubmit} fullWidth className={'challenge__button'} variant={'contained'} color={'secondary'}>
-                    Next
-                </Button>
+                {life.length === 0
+                    ?
+                    <Button disabled={!isSubmit} fullWidth className={'challenge__button'} variant={'contained'} component={Link} to={'/result'}>
+                        Exit
+                    </Button>
+                    :
+                    <Button onClick={handleSwitchStep} disabled={!isSubmit} fullWidth className={'challenge__button'} variant={'contained'} color={'secondary'}>
+                        Next
+                    </Button>
+                }
             </div>
         </form>
     )

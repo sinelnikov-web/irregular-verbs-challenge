@@ -108,9 +108,14 @@ body {
     color: black;
 }
 
+.challenge__input-group {
+    height: 80px;
+}
+
 
 .challenge__input {
     margin-left: 20px !important;
+    flex-basis: 33%;
 }
 
 
@@ -178,9 +183,71 @@ body {
     margin-bottom: 10px!important;
 }
 
+/* Leaderboard */
+
+.leaderboard {
+    margin: 40px auto 0;
+    text-align: center;
+    width: 285px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.leaderboard__header {
+    margin-bottom: 20px;
+}
+
+.leaderboard__question {
+    margin: 10px 0;
+}
+
+.leaderboard__footer {
+
+}
+
+.leaderboard__user-total {
+    font-size: 300%;
+}
+
+.leaderboard-controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.leaderboard__table-wrapper {
+    height: 190px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.leaderboard__table {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.leaderboard__table-head {
+    color: rgba(0,0,0,.54);
+}
+
+.leaderboard__table td,
+.leaderboard__table th {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.leaderboard__table tr {
+    height: 40px;
+}
+
 @media (max-width: 630px) {
     .challenge__input-group {
-        height: 250px;
+        height: 280px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -191,5 +258,9 @@ body {
     }
     .challenge__input:last-child {
         margin-bottom: 0!important;
+    }
+    .leaderboard {
+        margin: 0 auto;
+        height: 100%;
     }
 }

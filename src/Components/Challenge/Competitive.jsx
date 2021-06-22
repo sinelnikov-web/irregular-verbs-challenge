@@ -84,7 +84,6 @@ const Competitive = React.memo((props) => {
             score
         }
         dispatch(updateResult(data))
-        return <Redirect to={'/result'} />
     }
 
     return (

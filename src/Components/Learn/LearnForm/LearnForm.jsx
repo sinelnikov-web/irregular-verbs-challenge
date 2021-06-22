@@ -1,12 +1,8 @@
 import {Button, TextField} from "@material-ui/core";
 import {useFormik} from "formik";
 import React from "react";
-import {Redirect} from "react-router-dom"
-import EndPage from "../../EndPage/EndPage";
 
 const LearnFrom = ({onSubmit, setStatus, isSubmit, errors, generateVerb, setErrors, setIsSubmit, isTyping}) => {
-
-    console.log('ChallengeForm render')
 
     const formik = useFormik({
         initialValues: {
@@ -29,8 +25,8 @@ const LearnFrom = ({onSubmit, setStatus, isSubmit, errors, generateVerb, setErro
         generateVerb()
     }
 
-    return(
-        <form onSubmit={formik.handleSubmit}>
+    return (
+        <form onSubmit={formik.handleSubmit} autoComplete={'off'}>
             <div className="challenge__input-group">
                 <TextField
                     InputProps={{
@@ -80,11 +76,13 @@ const LearnFrom = ({onSubmit, setStatus, isSubmit, errors, generateVerb, setErro
                 {formik.errors.pastParticiple && formik.touched.pastParticiple && formik.errors.pastParticiple}
             </div>
             <div className="challenge__button-group">
-                <Button disabled={isSubmit || isTyping} fullWidth className={'challenge__button'} variant={'contained'} color={'primary'}
+                <Button disabled={isSubmit || isTyping} fullWidth className={'challenge__button'} variant={'contained'}
+                        color={'primary'}
                         type="submit">
                     Submit
                 </Button>
-                <Button onClick={handleSwitchStep} disabled={!isSubmit} fullWidth className={'challenge__button'} variant={'contained'} color={'secondary'}>
+                <Button onClick={handleSwitchStep} disabled={!isSubmit} fullWidth className={'challenge__button'}
+                        variant={'contained'} color={'secondary'}>
                     Next
                 </Button>
             </div>

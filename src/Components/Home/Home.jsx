@@ -12,7 +12,7 @@ const Home = () => {
         dispatch(getVerbs())
     }, [])
 
-    return(
+    return (
         <section className="homepage">
             <span className="homepage__welcome">Welcome to</span>
             <h1 className="homepage__title">Irregular Verbs Challenge</h1>
@@ -24,9 +24,11 @@ const Home = () => {
                 What to do? → enter three forms of verbs as many times in a row as you can.
             </p>
             <div className="homepage__controls">
-                <Button variant="outlined" className="homepage__button" component={Link} to={'/competitive'}>Competitive mode</Button>
+                <Button variant="outlined" className="homepage__button" component={Link} to={'/competitive'}>Competitive
+                    mode</Button>
                 <span className="homepage__buttons-divider">or</span>
-                <Button variant="outlined" className="homepage__button" component={Link} to={'/learn'}>Learning mode</Button>
+                <Button variant="outlined" className="homepage__button" component={Link} to={'/learn'}>Learning
+                    mode</Button>
             </div>
         </section>
     )

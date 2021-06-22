@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from "react";
-import heartImage from "../../../assets/images/heart.png"
-import EndPage from "../../EndPage/EndPage";
 
 
 const LearnHeader = React.memo(({currentVerb, setIsTyping}) => {
@@ -50,7 +48,7 @@ const LearnHeader = React.memo(({currentVerb, setIsTyping}) => {
         }
     }, [currentVerb, challenge])
 
-    return(
+    return (
         <div className="challenge__block">
             <h1 className="challenge__verb">
                 {challenge}<span className={'challenge__cursor'}>{showCursor ? "|" : <>&nbsp;</>}</span>

@@ -11,10 +11,13 @@ export const resultReducer = (state = initialState, action) => {
     const {type, payload} = action
     switch (type) {
         case UPDATE_RESULT: {
+            debugger
             let totalScore
             if (localStorage.getItem('totalScore')) {
                 totalScore = parseFloat(localStorage.getItem('totalScore'))
                 totalScore = totalScore < payload.score ? payload.score : totalScore
+                localStorage.removeItem('totalScore')
+                localStorage.setItem('totalScore', totalScore)
             } else {
                 localStorage.setItem('totalScore', payload.score)
                 totalScore = payload.score

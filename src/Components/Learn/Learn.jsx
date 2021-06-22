@@ -79,7 +79,7 @@ const Learn = React.memo((props) => {
             score: 0
         }
         dispatch(updateResult(data))
-        return <Redirect to={'/result'} />
+        return <Redirect to={'/result'}/>
     }
 
     return (
@@ -104,7 +104,6 @@ const Learn = React.memo((props) => {
         </section>
     )
 })
-
 
 
 export default Learn

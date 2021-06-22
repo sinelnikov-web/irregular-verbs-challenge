@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import heartImage from "../../../assets/images/heart.png"
-import EndPage from "../../EndPage/EndPage";
 
 
 const ChallengeHeader = React.memo(({currentVerb, score, life, setIsTyping}) => {
@@ -51,7 +50,7 @@ const ChallengeHeader = React.memo(({currentVerb, score, life, setIsTyping}) => 
 
     return(
         <div className="challenge__block">
-            <span className="challenge__lives">{life.map(l => <img className={'challenge__heart'} src={heartImage} alt={life.length}/>)}</span>
+            <span className="challenge__lives">{life.map((l, i) => <img key={i} className={'challenge__heart'} src={heartImage} alt={life.length}/>)}</span>
             <span className="challenge__score">score: {score}</span>
             <h1 className="challenge__verb">
                 {challenge}<span className={'challenge__cursor'}>{showCursor ? "|" : <>&nbsp;</>}</span>

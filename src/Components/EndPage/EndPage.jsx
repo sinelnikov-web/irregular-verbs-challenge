@@ -1,10 +1,13 @@
 import {
-    Box, Button,
+    Box,
+    Button,
     Collapse,
-    IconButton, Paper,
+    IconButton,
+    Paper,
     Table,
     TableBody,
-    TableCell, TableContainer,
+    TableCell,
+    TableContainer,
     TableHead,
     TableRow,
     Typography
@@ -23,8 +26,7 @@ const EndPage = ({setStatus}) => {
     }, [])
 
     let result = useSelector(state => state.result)
-    console.log(result.mistakesList)
-    return(
+    return (
         <div className={'results'}>
             <h1 className="results__title">Congratulations! You complete challenge!</h1>
             <span className="results__score">Your score: {result.score}</span>
@@ -38,14 +40,19 @@ const EndPage = ({setStatus}) => {
                             </TableRow>
                         </TableHead>
                         <TableBody>
-                            {Object.keys(result.mistakesList).map((key, index) => <Row key={index} verb={key} mistake={result.mistakesList[key]}/>)}
+                            {Object.keys(result.mistakesList).map((key, index) => <Row key={index} verb={key}
+                                                                                       mistake={result.mistakesList[key]}/>)}
                         </TableBody>
                     </Table>
                 </TableContainer>
             </div>
             <div className="results__controls">
-                <Button className={'results__control'} variant={'outlined'} component={Link} to={'/competitive'}>Play again</Button>
-                <Button className={'results__control'} variant={'outlined'} component={Link} to={'/learn'}>Learn verbs</Button>
+                <Button className={'results__control'} variant={'outlined'} component={Link} to={'/competitive'}>Play
+                    again</Button>
+                <Button className={'results__control'} variant={'outlined'} component={Link} to={'/learn'}>Learn
+                    verbs</Button>
+                <Button className={'results__control'} variant={'outlined'} component={Link}
+                        to={'/leaderboard'}>Leaderboard</Button>
             </div>
         </div>
     )
@@ -60,13 +67,13 @@ function Row({verb, mistake}) {
             <TableRow>
                 <TableCell onClick={() => setOpen(!open)} component="th" scope="row" align={'center'}>
                     <IconButton aria-label="expand row" size="small">
-                        {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                        {open ? <KeyboardArrowUpIcon/> : <KeyboardArrowDownIcon/>}
                     </IconButton>
                     {verb}
                 </TableCell>
             </TableRow>
             <TableRow>
-                <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
+                <TableCell style={{paddingBottom: 0, paddingTop: 0}} colSpan={6}>
                     <Collapse in={open} timeout="auto" unmountOnExit>
                         <Box margin={1}>
                             <Typography variant="h6" gutterBottom component="div">
